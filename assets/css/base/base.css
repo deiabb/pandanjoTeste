@@ -1,0 +1,21 @@
+@import url(_reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+body {
+  background: #F5F5F5;
+  width: 428px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: #F5F5F5;
+    width: 1366px;
+    margin: 0;
+    position: absolute;
+  }
+
+  .conteudo-principal {
+    width: 100vw;
+  }
+}
+

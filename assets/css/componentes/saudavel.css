@@ -1,0 +1,125 @@
+.saudavel {
+  width: 425px;
+  height: 179px;
+  background: transparent linear-gradient(269deg, #80D6B5 0%, #89C993 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.saudavel__lista {
+  width: 332px;
+  height: 105px;    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 35.9px 42.99px 38.11px 52.72px;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .saudavel {
+    width: 100%;
+  }
+  .saudavel__lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .saudavel {
+    width: 100vw;
+  }
+  .saudavel__lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+  }
+}
+
+.lista--item {
+  display: flex;
+  align-items: center;
+  font: normal normal bold 16px/19px Raleway;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.lista--icone {
+  display: block;
+  margin-right: 11.53px;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2rem;
+}
+
+.gluten {
+  background-image: url(../../img/icones/gluten-free.svg);
+}
+
+.organico {
+  background-image: url(../../img/icones/organico.svg);
+}
+
+.lowcarb {
+  background-image: url(../../img/icones/lowcarb.svg);
+  background-size: 2.55rem;
+}
+
+.semlac {
+  background-image: url(../../img/icones/semlac.svg);
+  background-size: 2.55rem;
+}
+
+.divisao--imagem{
+  background-image: url(../../img/rodape_mobile.png);
+  width: 425px;
+  height: 421px;
+	margin-bottom: 100px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .divisao--imagem {
+    background-image: url(../../img/rodape_desk.png);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divisao--imagem {
+    background: transparent url(../../img/rodape_desk.png) 0% 0% no-repeat padding-box;
+    width: 100vw;
+    margin-bottom: 80px
+  }
+
+  .lista--item {
+    font-size: 20px;
+    font-family: Raleway;
+  }
+
+  .lista--icone {
+    width: 68px;
+    height: 68px;
+  }
+
+  .gluten {
+    background-size: 4rem;
+  }
+
+  .organico {
+    background-size: 4rem;
+  }
+
+  .lowcarb {
+    background-size: 5rem;
+  }
+
+  .semlac {
+    background-size: 5rem;
+  }
+}

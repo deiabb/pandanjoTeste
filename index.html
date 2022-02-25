@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Armazem Pandanjo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    
+	
+		<link rel="stylesheet" href="./assets/css/base/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/base/base.css"/>
+    <link rel="stylesheet" href="./assets/css/componentes/produto.css"/>
+    <link rel="stylesheet" href="./assets/css/componentes/saudavel.css"/>
+    <link rel="stylesheet" href="./assets/css/componentes/detalhes.css"/>
+    <link rel="stylesheet" href="./assets/css/componentes/opiniao.css"/>
+
+	</head>
+	<body>
+    <main class="conteudo-principal">
+      <section class="produto">
+        <div class="produto__imagem">
+          <span class="produto__desconto">- 22%</span>
+          <img
+          class="produto__foto"
+          src="./assets/img/produto_grande.png"
+          alt="Imagem do produto"
+        />
+          <div class="hide-show">
+            <img src="./assets/img/produto_menor.png" alt="Foto do produto" class="foto-pequena" >
+            <img src="./assets/img/produto_menor.png" alt="Foto do produto em preto e branco" class=" foto-pequena preto-branco">
+          </div>
+        </div>
+        <div class="produto__detalhes">
+          <div class="produto__descricao">
+            <h2 class="produto__descricao--titulo">Oleo de coco Extra Virgem Extraido da Película do Coco Santo Oleo - <span id="tamanho"></span></h2>
+            <hr class="linha"></hr>
+          </div>
+          <div class="produto__opcoes">
+            <p class="produto__opcoes--titulo">SELECIONE UMA DAS OPÇÕES ABAIXO</p>
+            <div class="produto__opcoes--botoes">
+              <button class="opcoes--btn" id="btn1">200 ml</button>
+              <button class="opcoes--btn" id="btn2">400 ml</button>
+              <button class="opcoes--btn" id="btn3">1 L</button>
+              <button class="opcoes--btn" id="btn4">2 L</button>
+            </div>
+          </div> 
+          <div class="produto__preco--container">
+            <div class="produto__preco hide">
+              <p class="produto__preco-descricao" id="preco">R$ 17,88 <span>R$ 30,00</span></p>
+              <p class="produto__preco-detalhe">Via Boleto, Pix e transferências</p>
+            </div>
+            <hr class="linha--preco hide"></hr>
+            <div class="produto__preco">
+              <p class="produto__preco-descricao" id="preco"><span>R$ 30,00</span> R$ 16,80</p>
+              <p class="produto__preco-detalhe">ou em <span id="parcelas">3x R$ 3,27</span> s/ juros</p>
+            </div> 
+          </div>
+          <div class="produto__quantidade">
+            <div class="produto__quantidade--btn-contador">
+              <button 
+              class="quantidade--btn-contador"
+              onclick="diminui()">- </button>
+              <p class="contador">1</p>
+              <button 
+              class="quantidade--btn-contador"
+              onclick="aumenta()"> +</button>
+            </div>
+            <button class="quantidade--btn-comprar" type="submit" onclick="comprar()">comprar</button>
+            <a href="#" class="quantidade--link">Quer comprar em grandes quantidades?</a>
+          </div>  
+          <div class="produto__frete">
+            <p class="produto__frete--titulo">calcule o frete</p>
+            <p class="produto__frete--buscar">Não sei meu CEP</p>
+            <input class="produto__frete--digite" type="text" placeholder="Insira o cep aqui">
+            <button class="produto__frete--btn-calcular">Calcular</button>
+          </div> 
+        </div>
+        
+      </section>
+      <section class="saudavel">
+        <ul class="saudavel__lista">
+          <li class="lista--item">
+            <span class="lista--icone gluten"></span> 
+            <p>Glúten</p>
+          </li>
+          <li class="lista--item">
+            <span class="lista--icone organico"></span>
+            <p>Orgânico</p>
+          </li>
+          <li class="lista--item">
+            <span class="lista--icone lowcarb"></span>
+            <p>LowCarb</p>
+          </li>
+          <li class="lista--item">
+            <span class="lista--icone semlac"></span> 
+            <p>Sem Lácteos</p> 
+          </li>
+        </ul>
+      </section>
+      <div class="divisao--imagem">
+      </div>
+      <section class="detalhes">
+        <h2 class="detalhes__titulo">Detalhes do produto</h2>
+        <p class="detalhes__descricao">
+          O Santo Óleo de Coco Virgem é um produto 100% natural e obtido através da parte branca carnosa e da película marrom. Sua coloração é um pouco amarelada e sua acidez máxima é de 0 5%. Indicação de uso: Preparação de alimentos quentes como bolos tortas arroz frituras etc.    
+        </p>
+        <ul class="detalhes__caracteristicas">
+          <li><p>Sem conservantes e/ou produtos químicos</p></li>
+          <li><p>Não contém glúten</p></li>
+          <li><p>Prensado à frio</p></li>
+          <li><p>Acidez abaixo de 5% </p></li>
+          <li><p>Extraído da polpa da fruta</p></li>
+          <li><p>Não refinado e não hidrogenado</p></li>
+        </ul>
+      </section>
+      <section class="opiniao">
+        <div class="opiniao__area-titulo">
+          <h2 opiniao__titulo >Opinião de quem comprou</h2>
+          <hr class="linha--opiniao hide"></hr>
+          <div class="opiniao__avaliacoes">
+            <div class="estrelas">
+              <span class="opiniao__classificacao classificacao--icone"></span>
+              <span class="opiniao__classificacao classificacao--icone"></span>
+              <span class="opiniao__classificacao classificacao--icone"></span>
+              <span class="opiniao__classificacao classificacao--icone"></span>
+              <span class="opiniao__classificacao classificacao--icone"></span>
+            </div>
+            <p >
+              (28 avaliações)  
+            </p>
+          </div>
+          
+        </div>
+        <section class="opiniao--comentarios">
+          <div class="opiniao__comentario--card">
+            <h3 class="comentario--card-nome">Delly</h3>
+            <span class="opiniao__classificacao classificacao--icone"></span>
+            <p class="opiniao__individual">"Maravilhoso! sem dúvidas, o melhor do mercado. sem retrogosto e dissolve facilmente."</p>
+            <p class="opiniao__data">20/01/2021</p>
+          </div>
+          <div class="opiniao__comentario--card">
+            <h3 class="comentario--card-nome">Delly</h3>
+            <span class="opiniao__classificacao classificacao--icone"></span>
+            <p class="opiniao__individual">"Maravilhoso! sem dúvidas, o melhor do mercado. sem retrogosto e dissolve facilmente."</p>
+            <p class="opiniao__data">20/01/2021</p>
+          </div>
+          <div class="opiniao__comentario--card">
+            <h3 class="comentario--card-nome">Delly</h3>
+            <span class="opiniao__classificacao classificacao--icone"></span>
+            <p class="opiniao__individual">"Maravilhoso! sem dúvidas, o melhor do mercado. sem retrogosto e dissolve facilmente."</p>
+            <p class="opiniao__data">20/01/2021</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,170 @@
+.opiniao {
+	display: flex;
+	flex-direction: column;
+}
+
+.opiniao__area-titulo {
+	align-content: flex-end;
+	align-items: flex-end;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	width: 70%;
+	height: 70px;
+	text-align: left;
+	font: normal normal bold 30px/35px Raleway;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+.estrelas {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 60px;
+}
+
+.opiniao__avaliacoes {
+	align-items: center;
+	width: 100vw;
+	height: 19px;
+	text-align: left;
+	font: normal normal normal 16px/19px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+	display: flex;
+  flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.opiniao__classificacao {
+	background-image: url(../../img/icones/estrela-cheia.svg);
+}
+
+.classificacao--icone{
+	width: 33px;
+	height: 33px;
+	margin: 0;
+}
+
+.opiniao--comentarios {
+  display: flex;
+  width: 428px;
+  overflow: hidden;
+}
+
+.opiniao__comentario--card {
+	display: flex;
+	flex-direction: column;
+	width: 338px;
+	height: 247px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	margin: 30px 44px 123px 46px;
+}
+
+.comentario--card-nome {
+	height: 30px;
+	text-align: left;
+	font: normal normal bold 25px/30px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+	margin: 28px 252px 0px 25px;
+}
+
+.classificacao--icone {
+	margin-right: auto;
+	width: 33px;
+	height: 33px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem;
+	margin-top: 0;
+}
+
+.opiniao__classificacao {
+	background-image: url(../../img/icones/estrela-cheia.svg);
+}
+
+.opiniao__individual {
+	width: 278px;
+	height: 78px;
+	text-align: left;
+	font: normal normal normal 18px/28px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+	margin: 12px 35px 15px 25px;
+}
+
+.opiniao__data {
+	width: 68px;
+	height: 15px;
+	text-align: left;
+	font: normal normal 300 13px/15px Roboto;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+	margin-left: 25px;
+	margin-bottom: 27px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .opiniao {
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+
+  .opiniao__area-titulo {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .opiniao__avaliacoes {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .opiniao--comentarios {
+    width: auto;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 1024px) {
+	.opiniao {
+		width: 1366px;
+		margin-left: 40px;
+	} 
+
+  .opiniao__area-titulo {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+		align-items: center;
+		margin-left: 62px;
+  }
+
+	.linha--opiniao {
+		width: 400px;
+	}
+
+  .opiniao__avaliacoes {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .opiniao--comentarios {
+    width: auto;
+    overflow: scroll;
+		margin-left: 18px;
+  }
+}
